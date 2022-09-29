@@ -1,0 +1,17 @@
+[requires]
+glfw/3.3.7
+tinyobjloader/1.0.6
+glm/0.9.9.8
+vulkan-headers/1.3.211.0
+vulkan-loader/1.3.211.0
+stb/cci.20210910
+
+[generators]
+cmake
+
+[imports]
+bin, *.* -> ./dependencies/Binaries # Copies all dll files from the package "bin" folder to my project "bin" folder
+exe, *.* -> ./dependencies/Binaries # Copies all dll files from the package "bin" folder to my project "bin" folder
+lib, *.* -> ./dependencies/Libs/x64 #
+include, *.* -> ./dependencies/Includes #
+
